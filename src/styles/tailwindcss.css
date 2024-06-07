@@ -1295,17 +1295,6 @@ a, button {
 
 /* ============ navbar =========== */
 
-.navbar-area {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 20;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-duration: 300ms;
-}
 
 .sticky {
   --tw-bg-opacity: 1;
@@ -1355,39 +1344,6 @@ a, button {
 .active>.toggler-icon:nth-child(3) {
   top: -8px;
   transform: rotate(135deg);
-}
-
-.navbar-nav .nav-item a {
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  position: relative;
-  --tw-text-opacity: 1;
-  color: rgba(116, 126, 136, var(--tw-text-opacity));
-}
-
-.navbar-nav .nav-item a:hover{
-  --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
-}
-
-.navbar-nav .nav-item a{
-  z-index: 10;
-}
-
-@media (min-width: 960px){
-  .navbar-nav .nav-item a{
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-}
-
-.navbar-nav .nav-item a.active {
-  --tw-text-opacity: 1;
-  color: rgba(249, 79, 79, var(--tw-text-opacity));
 }
 
 /* =========== hero =========== */
