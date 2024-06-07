@@ -12,6 +12,82 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	</head>
 	<body>
 		<Header />
+		<!--====== HERO PART START ======-->
+		<div
+			id="home"
+			class="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center"
+		>
+			<div class="hero_shape shape_1">
+				<img src="images/shape/shape-1.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_2">
+				<img src="images/shape/shape-2.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_3">
+				<img src="images/shape/shape-3.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_4">
+				<img src="images/shape/shape-4.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_6">
+				<img src="images/shape/shape-1.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_7">
+				<img src="images/shape/shape-4.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_8">
+				<img src="images/shape/shape-3.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_9">
+				<img src="images/shape/shape-2.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_10">
+				<img src="images/shape/shape-4.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_11">
+				<img src="images/shape/shape-1.svg" alt="shape" />
+			</div><!-- hero shape -->
+			<div class="hero_shape shape_12">
+				<img src="images/shape/shape-2.svg" alt="shape" />
+			</div><!-- hero shape -->
+
+			<div class="container">
+				<div class="row">
+					<div class="w-full lg:w-1/2">
+						<div class="header_hero_content pt-150 lg:pt-0">
+							<h2
+								class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold"
+							>
+								Chào mừng đến với <span class="text-theme-color"
+									>GODA NETWORK</span
+								>
+							</h2>
+							<p class="mt-8 lg:mr-8">
+								8 năm Kinh nghiệm sản xuất nội dung Content trên
+								Youtube với tổng cộng 15 triệu lượt đăng ký trên
+								Youtube
+							</p>
+							<div class="hero_btn mt-10">
+								<a class="main-btn" href="#0">Get Started</a>
+							</div>
+						</div>
+						<!-- header hero content -->
+					</div>
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+			<div class="header_shape hidden lg:block"></div>
+
+			<div class="header_image flex items-center">
+				<div class="image 2xl:pl-25">
+					<img src="images/header-image.svg" alt="Header Image" />
+				</div>
+			</div>
+			<!-- Hero image -->
+		</div>
+		<!--====== HERO PART END ======-->
+
 		<!--====== SERVICES PART START ======-->
 
 		<section class="services_area pt-120" id="about">
@@ -1037,8 +1113,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				<div class="row justify-center">
 					<div class="w-full lg:w-1/2">
 						<div class="section_title text-center pb-6">
-							<h5 class="sub_title">Team</h5>
-							<h4 class="main_title">Meet Our Team Members</h4>
+							<h5 class="sub_title">Đội ngũ</h5>
+							<h4 class="main_title">Ban Lãnh Đạo</h4>
 						</div>
 						<!-- section title -->
 					</div>
@@ -1051,7 +1127,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 								<div class="single_team mx-3">
 									<div class="team_image relative">
 										<img
-											src="images/team-1.jpg"
+											src="images/1.jpg"
 											alt="team"
 											class="w-full"
 										/>
@@ -1090,13 +1166,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											<a
 												href="#"
 												class="text-black group-hover:text-white"
-												>Chris Dave</a
+												>Nguyễn Văn Huân</a
 											>
 										</h4>
 										<p
 											class="mt-2 transition-all duration-300 group-hover:text-white"
 										>
-											Founder and CEO
+											Chủ Tịch Hội đồng Quản Trị
 										</p>
 									</div>
 								</div>
@@ -1108,7 +1184,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 								<div class="single_team mx-3">
 									<div class="team_image relative">
 										<img
-											src="images/team-3.jpg"
+											src="images/2.jpg"
 											alt="team"
 											class="w-full"
 										/>
@@ -1147,13 +1223,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											<a
 												href="#"
 												class="text-black group-hover:text-white"
-												>Sarah Doe</a
+												>Vũ Việt Hoàng</a
 											>
 										</h4>
 										<p
 											class="mt-2 transition-all duration-300 group-hover:text-white"
 										>
-											UI Designer
+											Giám đốc Công Ty
 										</p>
 									</div>
 								</div>
@@ -1165,7 +1241,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 								<div class="single_team mx-3">
 									<div class="team_image relative">
 										<img
-											src="images/team-5.jpg"
+											src="images/3.jpg"
 											alt="team"
 											class="w-full"
 										/>
@@ -1204,70 +1280,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 											<a
 												href="#"
 												class="text-black group-hover:text-white"
-												>Rob Hope</a
+												>Hồ Anh Tuấn</a
 											>
 										</h4>
 										<p
 											class="mt-2 transition-all duration-300 group-hover:text-white"
 										>
-											Dr. Software Engineer
-										</p>
-									</div>
-								</div>
-								<!-- single team -->
-							</div>
-						</div>
-						<div class="w-full lg:w-4/12">
-							<div class="single_team_item mx-auto">
-								<div class="single_team mx-3">
-									<div class="team_image relative">
-										<img
-											src="images/team-2.jpg"
-											alt="team"
-											class="w-full"
-										/>
-										<ul
-											class="social absolute top-4 right-8"
-										>
-											<li>
-												<a href="#"
-													><i
-														class="lni lni-facebook-filled"
-													></i></a
-												>
-											</li>
-											<li>
-												<a href="#"
-													><i
-														class="lni lni-twitter-filled"
-													></i></a
-												>
-											</li>
-											<li>
-												<a href="#"
-													><i
-														class="lni lni-linkedin-original"
-													></i></a
-												>
-											</li>
-										</ul>
-									</div>
-									<div
-										class="team_content py-5 px-8 relative"
-									>
-										<h4
-											class="team_name text-xl md:text-2xl"
-										>
-											<a
-												href="#"
-												class="text-black group-hover:text-white"
-												>Micheal Jordan</a
-											>
-										</h4>
-										<p
-											class="mt-2 transition-all duration-300 group-hover:text-white"
-										>
-											Business Development Manager
+											Giám đốc Vận Hành
 										</p>
 									</div>
 								</div>
