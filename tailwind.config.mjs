@@ -94,5 +94,11 @@ export default {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	daisyui: {
+		themes: [],
+	},
+	plugins: [
+		require('daisyui'),
+	],
+
 }

@@ -1,7 +1,7 @@
 
-(function() {
+(function () {
     //===== Prealoder
-    
+
     window.onload = function () {
         window.setTimeout(fadeout, 500);
     }
@@ -10,8 +10,8 @@
         document.querySelector('.preloader').style.opacity = '0';
         document.querySelector('.preloader').style.display = 'none';
     }
-    
-    
+
+
     /*=====================================
     Sticky
     ======================================= */
@@ -35,11 +35,11 @@
             backToTo.style.display = "none";
         }
     };
-    
-    
+
+
     // for menu scroll 
     var pageLink = document.querySelectorAll('.page-scroll');
-    
+
     pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
             e.preventDefault();
@@ -49,7 +49,7 @@
             });
         });
     });
-    
+
     // section menu active
     function onScroll(event) {
         var sections = document.querySelectorAll('.page-scroll');
@@ -72,7 +72,7 @@
     window.document.addEventListener('scroll', onScroll);
 
     //===== close navbar-collapse when a  clicked
-    let navbarToggler = document.querySelector(".navbar-toggler");    
+    let navbarToggler = document.querySelector(".navbar-toggler");
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
     document.querySelectorAll(".page-scroll").forEach(e =>
@@ -81,22 +81,22 @@
             navbarCollapse.classList.remove('show')
         })
     );
-    navbarToggler.addEventListener('click', function() {
+    navbarToggler.addEventListener('click', function () {
         navbarToggler.classList.toggle("active");
         // navbarCollapse.classList.toggle('show')
-    }) 
-    
-    
+    })
+
+
     // WOW active
     new WOW().init();
 
-    
+
     //======== tiny slider for work
     tns({
         container: '.work_active',
         autoplay: true,
         autoplayTimeout: 5000,
-        autoplayText: [ ' ', ' ' ],
+        autoplayText: [' ', ' '],
         mouseDrag: true,
         gutter: 0,
         nav: true,
@@ -130,7 +130,7 @@
         container: '.team_active',
         autoplay: true,
         autoplayTimeout: 5000,
-        autoplayText: [ ' ', ' ' ],
+        autoplayText: [' ', ' '],
         mouseDrag: true,
         gutter: 0,
         nav: true,
@@ -157,20 +157,20 @@
     // ================ pricing tab
     const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('[data-tab-content]')
-    
+
     tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.tabTarget)
-        tabContents.forEach(tabContent => {
-          tabContent.classList.remove('active')
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active')
+            })
+            tabs.forEach(tab => {
+                tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('active')
         })
-        tabs.forEach(tab => {
-          tab.classList.remove('active')
-        })
-        tab.classList.add('active')
-        target.classList.add('active')
-      })
     })
 
-    
+
 })();
