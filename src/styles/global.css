@@ -8,5 +8,5 @@
 
 /* Aligning the dropdown menu on mobile */
 .menu-horizontal > li:not(.menu-title) > details > ul {
-    @apply ms-[-32px] md:ms-0
+    @apply ms-[-34px] md:ms-0
 }
