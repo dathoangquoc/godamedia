@@ -1,44 +1,57 @@
----
-import { SITE_TITLE } from "../consts";
----
-
-<header class="navbar bg-base-100 lg:pb-0 w-full sticky top-0 z-50">
+<header
+	class="navbar m-0 text-white bg-black/95 md:rounded-xl sticky top-0 z-50 shadow-lg md:m-2 w-[99%]"
+>
 	<div class="navbar-start">
-		<a class="btn btn-ghost text-xl">
-			<img src="/images/logo.png" alt="GODA logo" class="max-h-full" />
+		<a href="#">
+			<img
+				src="/images/logo2.png"
+				alt="GODA Media Logo"
+				class="pl-2 w-25"
+			/>
 		</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
-			<li><a href="#about">Văn hóa</a></li>
-			<li><a href="#services">Hệ sinh thái</a></li>
-			<li><a href="#team">Đội ngũ</a></li>
-			<li><a href="#contact">Liên hệ</a></li>
-			<li><a>Tin tức</a></li>
 			<li>
 				<details>
-					<summary>[empty]</summary>
-					<ul class="p-2">
-						<li><a>Submenu 1</a></li>
-						<li><a>Submenu 2</a></li>
+					<summary>Về chúng tôi</summary>
+					<ul class="p-2 bg-black/95">
+						<li><a>Giới thiệu</a></li>
+						<li><a>Tầm nhin</a></li>
+						<li><a>Sứ mệnh</a></li>
+						<li><a>Giá trị cốt lõi</a></li>
+						<li><a>Đội ngũ lãnh đạo</a></li>
+					</ul>
+				</details>
+			</li>
+			<li><a>Con người GODA</a></li>
+			<li><a>Tuyển dụng</a></li>
+			<li><a>Hệ sinh thái</a></li>
+			<li><a>Đối tác</a></li>
+			<li><a>Liên hệ</a></li>
+		</ul>
+	</div>
+	<!-- Menu on Mobiles -->
+	<div class="navbar-end">
+		<ul class="menu menu-horizontal ms-[-32px] px-1 lg:hidden">
+			<li>
+				<details>
+					<summary>Menu</summary>
+					<ul class="bg-black/95">
+						<li><a>Option 1</a></li>
+						<li><a>Option 2</a></li>
+						<li>
+							<details>
+								<summary>Submenu 1</summary>
+								<ul>
+									<li><a href="">Sub 1</a></li>
+									<li><a href="">Sub 2</a></li>
+								</ul>
+							</details>
+						</li>
 					</ul>
 				</details>
 			</li>
 		</ul>
-	</div>
-	<div class="navbar-end lg:invisible w-full">
-		<div class="dropdown dropdown-end">
-			<div tabindex="0" role="button" class="btn m-1">Menu</div>
-			<ul
-				tabindex="0"
-				class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-			>
-				<li><a href="#about">Văn hóa</a></li>
-				<li><a href="#services">Hệ sinh thái</a></li>
-				<li><a href="#team">Đội ngũ</a></li>
-				<li><a href="#contact">Liên hệ</a></li>
-				<li><a>Tin tức</a></li>
-			</ul>
-		</div>
 	</div>
 </header>
