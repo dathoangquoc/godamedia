@@ -10,3 +10,12 @@
 .menu-horizontal > li:not(.menu-title) > details > ul {
     @apply ms-[-60px] md:ms-0
 }
+
+/* Hover footer link */
+.footer_link_wrapper a, li {
+    @apply  hover:text-theme-color
+}
+
+.footer_link_wrapper li > a {
+    @apply text-white hover:text-theme-color
+}
