@@ -68,8 +68,6 @@ export default {
 
 			colors: {
 				"white": "#ffffff",
-				"black": "#38424D",
-				"gray": "#FBFBFF",
 				"yellow": "#FDD446",
 				"theme-color": "#F94F4F",
 				"border-color": "#E8E8E8",
