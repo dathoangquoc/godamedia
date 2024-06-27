@@ -1,8 +1,3 @@
-function hamburger() {
-    let x = document.getElementById("hamburger");
-    if (x.style.display === "block") {
-        x.style.display === "none"
-    } else {
-        x.style.display = "block"
-    }
+export function formatDate(date) {
+    return new Date(date).toLocaleDateString(undefined)
 }
