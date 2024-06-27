@@ -2,184 +2,57 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import "../styles/blog.css";
 
 import { formatDate } from "../js/script";
 import { Image } from "astro:assets";
 
 const { frontmatter } = Astro.props;
-const { title, date, cover, coverAlt, author } = frontmatter;
+const { title, description, date, cover, coverAlt, author } = frontmatter;
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead title={title} description={description} />
     </head>
     <body>
         <Header />
         <main class="about_area pt-17 relative">
-            <div class="container">
+            <article class="container">
                 <div class="row justify-end">
                     <div class="w-full">
+                        <!-- frontmatter -->
                         <div class="about_content mx-4 pt-11 lg:pt-15 lg:pb-8">
                             <div class="section_title text-center pb-4">
                                 <h1 class="main_title">
                                     {title}
                                 </h1>
-                                <h2 class="text-md">
+                                <h2 class="text-md text-black font-normal">
                                     by <span class="font-semibold"
                                         >{author}</span
                                     > • {formatDate(date)}
                                 </h2>
                             </div>
-                            <div class="w-fit mx-auto">
+                            <div class="w-fit mx-auto lg:w-3/4">
                                 <Image
                                     src={cover}
                                     alt={coverAlt}
-                                    width="600"
-                                    height="300"
+                                    width="1200"
+                                    height="600"
                                     format="webp"
                                 />
                             </div>
                         </div>
-                        <div class="px-4 lg:px-25 py-8">
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    MÔ TẢ CÔNG VIỆC
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Mục đích của công việc:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Biên dịch các nội dung kịch bản cho
-                                        video từ tiếng Việt sang tiếng Anh.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Nhiệm vụ và trách nhiệm chính:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Biên dịch các nội dung kịch bản từ tiếng
-                                        Việt sang tiếng Anh, đảm bảo văn phong
-                                        phù hợp với người bản ngữ.
-                                    </li>
-                                    <li>
-                                        Kiểm soát chất lượng bài dịch trước khi
-                                        chuyển bộ phận thiết kế.
-                                    </li>
-                                </ul>
-                            </div>
 
-                            <!-- Yeu cau -->
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    YÊU CẦU
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Kinh nghiệm:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Từ 01 năm kinh tnghiệm tại vị trí tương
-                                        đương
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Kiến thức chuyên môn:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Tốt nghiệp chuyên ngành Biên phiên dịch
-                                        các trường HANU, ULIS.
-                                    </li>
-                                    <li>IELTS từ 7.5 trở lên.</li>
-                                    <li>
-                                        Ưu tiên ứng viên có kinh nghiệm dịch
-                                        video.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    3. Kỹ năng:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Cẩn thận, tỉ mỉ, sắp xếp công việc hợp
-                                        lý, khoa học.
-                                    </li>
-                                    <li>
-                                        Có khả năng làm việc nhóm, làm việc độc
-                                        lập.
-                                    </li>
-                                    <li>
-                                        Thành thạo các ứng dụng tin học văn
-                                        phòng.
-                                    </li>
-                                    <li>Trách nhiệm cao trong công việc.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Quyen loi -->
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    QUYỀN LỢI
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Thu nhập:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>Lương cứng 13.000.000 - 15.000.000đ</li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Phụ cấp:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>Phụ cấp ăn trưa 30.000đ/ngày.</li>
-                                    <li>
-                                        Thưởng chung toàn công ty các dịp lễ,
-                                        tết, sinh nhật công ty, sinh nhật nhân
-                                        sự.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    3. Phúc lợi:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Du lịch, Team Building, Year End Party
-                                        hàng năm.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    4. Đào tạo:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Tham gia các khóa đào tạo chuyên sâu về
-                                        Youtube.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    5. Quyền lợi khác:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Được cấp máy tính 2 màn hình thỏa sức
-                                        sáng tạo.
-                                    </li>
-                                    <li>
-                                        Văn hóa làm việc không OT tại công ty.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                         <!-- content -->
+                        <div class="px-4 lg:px-25 py-4">
+                            <slot />
+                        </div>
                     </div>
                 </div>
                 <!-- row -->
-            </div>
+            </article>
         </main>
         <Footer />
     </body>
