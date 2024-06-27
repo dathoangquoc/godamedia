@@ -1,11 +1,11 @@
-content, h2 {
+.content h2 {
     @apply text-xl text-theme-color font-semibold pt-8
 }
 
-content, p {
+.content p {
     @apply py-2 text-black
 }
 
-content, ul {
+.content ul {
     @apply list-disc text-black
 }
