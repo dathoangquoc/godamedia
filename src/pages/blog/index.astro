@@ -4,6 +4,9 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import Banner from "../../components/blog/Banner.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import PostCard from "../../components/blog/PostCard.astro";
+
+const allPosts = await Astro.glob("./*.md");
 ---
 
 <!doctype html>
@@ -14,12 +17,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
     <body>
         <Header />
         <Banner />
-        <section>
-            <ul class="p-20 list-decimal text-xl text-black">
-                <li>
-                    <a href="../../blog/post-1">blog 1</a>
-                </li>
-            </ul>
+        <section
+            class="p-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+        >
+            {allPosts.map((post) => <PostCard {post} />)}
         </section>
         <Footer />
     </body>

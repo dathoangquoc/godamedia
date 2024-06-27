@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: 'Youtube Total Success - Hội tụ Youtuber, lan tỏa đam mê'
+title: 'Youtube Total Success'
 date: 2024-05-06
-description: 'This is the first post of my new Astro blog.'
+description: 'Hội tụ Youtuber, lan tỏa đam mê.'
 author: 'Author'
 cover: '/images/blog/blog-placeholder-1.jpg'
 coverAlt: 'The Astro logo on a dark background with a pink glow.'
