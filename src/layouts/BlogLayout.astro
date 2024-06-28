@@ -8,7 +8,7 @@ import { formatDate } from "../js/script";
 import { Image } from "astro:assets";
 
 const { frontmatter } = Astro.props;
-const { title, description, date, cover, coverAlt, author } = frontmatter;
+const { title, description, date, cover, coverAlt } = frontmatter;
 ---
 
 <!doctype html>
@@ -29,9 +29,7 @@ const { title, description, date, cover, coverAlt, author } = frontmatter;
                                     {title}
                                 </h1>
                                 <h2 class="text-md text-black font-normal">
-                                    by <span class="font-semibold"
-                                        >{author}</span
-                                    > • {formatDate(date)}
+                                    {formatDate(date)}
                                 </h2>
                             </div>
                             <div class="w-fit mx-auto lg:w-3/4">

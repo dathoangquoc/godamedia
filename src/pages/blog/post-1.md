@@ -3,7 +3,6 @@ layout: ../../layouts/BlogLayout.astro
 title: 'Youtube Total Success - - Hội tụ Youtuber, lan tỏa đam mê'
 date: 2024-05-06
 description: 'Trong tháng 5 vừa qua, sự kiện "Youtube Total Success" do GODA Media tổ chức tại Hà Nội đã thu hút sự chú ý của cộng đồng Youtuber Việt Nam.'
-author: 'Author'
 cover: '/images/blog/blog-placeholder-1.jpg'
 coverAlt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
