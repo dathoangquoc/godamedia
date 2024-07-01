@@ -1,12 +1,15 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: 'GODA MEDIA - Vượt qua hành trình 1 năm với 45++ nút Vàng nút Bạc'
+author: Author
+title: GODA MEDIA - Vượt qua hành trình 1 năm với 45+ nút Vàng nút Bạc
 date: 2024-05-06
-description: 'Hôm nay, GODA MEDIA hân hoan chào mừng sinh nhật lần thứ nhất của công ty!'
-author: 'Author'
-cover: '/images/blog/blog-placeholder-2.jpg'
-coverAlt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+description: Hôm nay, GODA MEDIA hân hoan chào mừng sinh nhật lần thứ nhất của công ty!
+cover: /src/assets/images/448184604_122199217970008160_170307718568012480_n.jpg
+coverAlt: The Astro logo on a dark background with a pink glow.
+tags:
+  - astro
+  - blogging
+  - learning in public
 ---
 
 ## Hôm nay, GODA MEDIA hân hoan chào mừng sinh nhật lần thứ nhất của công ty!
