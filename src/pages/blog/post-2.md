@@ -4,8 +4,8 @@ author: Author
 title: GODA MEDIA - Vượt qua hành trình 1 năm với 45+ nút Vàng nút Bạc
 date: 2024-05-06
 description: Hôm nay, GODA MEDIA hân hoan chào mừng sinh nhật lần thứ nhất của công ty!
-cover: /src/assets/images/448184604_122199217970008160_170307718568012480_n.jpg
-coverAlt: The Astro logo on a dark background with a pink glow.
+cover: https://lh3.googleusercontent.com/drive-viewer/AKGpihZUcc_a0jd9SSBlBkVdbfWQUZr3JZz2BaUaya0MzIMJOniFShKgDlZKqi7vzqbIEimwLOM-TYs-1ZOydGLxQd5hDTvKEVVtIw=s1600-rw-v1
+coverAlt: Vượt qua hành trình 1 năm với 45+ nút Vàng nút Bạc.
 tags:
   - astro
   - blogging

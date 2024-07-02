@@ -4,8 +4,8 @@ title: Youtube Total Success - Hội tụ Youtuber, lan tỏa đam mê
 date: 2024-05-06
 description: Trong tháng 5 vừa qua, sự kiện "Youtube Total Success" do GODA
   Media tổ chức tại Hà Nội đã thu hút sự chú ý của cộng đồng Youtuber Việt Nam.
-cover: /src/assets/images/_nvt5841-fb.jpg
-coverAlt: The Astro logo on a dark background with a pink glow.
+cover: https://lh3.googleusercontent.com/drive-viewer/AKGpihY7UgW7tYmUMjMSC3uUuv9Ya12dj52HONP9piF3fXL3BlPb-9KWk-Ipv86eX2Va0n5WSOWq69AsuNVyce8zvsq-YfZUD_0gKIM=s1600-rw-v1
+coverAlt: Youtube Total Success
 tags:
   - astro
   - blogging
