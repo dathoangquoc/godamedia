@@ -9,3 +9,11 @@
 .content ul {
     @apply list-disc text-black pl-5
 }
+
+.content a {
+    @apply text-red-400 hover:underline
+}
+
+.content img {
+    @apply max-h-[50vh] mx-auto
+}
