@@ -2,21 +2,23 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Hero from "../components/landing-page/Hero.astro";
-import About from "../components/landing-page/About.astro";
-import Intro from "../components/landing-page/Intro.astro";
-import Services from "../components/landing-page/Services.astro";
-import Team from "../components/landing-page/Team.astro";
-import Contact from "../components/landing-page/Contact.astro";
-import Partner from "../components/landing-page/Partner.astro";
-import Vision from "../components/landing-page/Vision.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead />
+		<link
+			href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Google Fonts Links For Icon -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<script
 			type="text/javascript"
 			src="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -61,18 +63,410 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	</head>
 	<body>
 		<Header />
-		<Hero />
-		<Intro />
-		<Vision />
-		<About />
-		<Team />
-		<Services />
-		<Partner />
-		<Contact />
-		<Footer />
-		<script>
-			if (window.netlifyIdentity) {
-			}
-		</script>
+		<div class="hero-section">
+			<div class="content" data-aos="fade-up">
+				<h2 style=" color: #fff;  ;">Chào mừng đến với</h2>
+				<h2 style=" color: #fff; font-size: 60px; ">GODA NETWORK</h2>
+				<p style=" ; color: #fff;">
+					<strong style="font-size: 30px; line-height: 50px;">
+						Nơi đưa sáng tạo của người Việt ra toàn Thế giới!
+					</strong><br />
+					8 năm Kinh nghiệm sản xuất nội dung Content trên Youtube với
+					tổng cộng 15 triệu lượt đăng ký trên Youtube
+				</p>
+				<button><a href="#lh">Liên hệ</a></button>
+			</div>
+		</div>
+		<!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER-->
+		<div id="vct">
+			<div class="card-container">
+				<div class="card-info" data-aos="fade-up">
+					<h2>Đội ngũ Ban Lãnh Đạo</h2>
+					<p>
+						Để vươn lên trở thành doanh nghiệp hàng đầu về Youtube,
+						không thể không nhắc đến những đóng góp to lớn của đội
+						ngũ Ban lãnh đạo của Công ty GODA Media, đã điều hành
+						doanh nghiệp một cách linh hoạt, hiệu quả, phát huy các
+						lợi thế cạnh tranh cốt lõi, đưa Công Ty GODA Media phát
+						triển bền vững.
+					</p>
+				</div>
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/1.jpg" />
+					<div class="card-content">
+						<p
+							style="font-size: 20px;color:#040e27; border-bottom: none; line-height: normal; padding:15px 0 5px 0;"
+						>
+							Chủ tịch Hội đồng Quản trị
+						</p>
+						<h3 class="did">Nguyễn Văn Huân</h3>
+						<h2>COB</h2>
+						<div class="box-scroll">
+							<p>
+								<b>8 Năm kinh nghiệm thực chiến </b>làm content
+								Youtube với con số tự hào: <br /><b
+									>5 nút vàng</b
+								> và hơn
+								<b>40 nút bạc </b>từ Youtube. Tổng cộng hơn 15
+								triệu người đăng ký trên Youtube.
+							</p>
+							<p>
+								Co-Founder Công ty Cổ phần Phong Thủy Phùng Gia,
+								Top 1 về thị phần Phong Thủy và độ phổ biến trên
+								các nền tảng xã hội Youtube, Facebook, Tiktok
+								thời điểm hiện tại.
+							</p>
+							<p>
+								Founder Công Ty Cổ Phần Truyền Thông BMG Group
+								với các hệ thống kênh content Phong Thủy, Sức
+								Khỏe, Triết Lý, Phát Triển Bản Thân (Bí Quyết
+								Thành Công), Lịch sử, đều thuộc Top lớn nhất của
+								Việt Nam.
+							</p>
+							<p>
+								Ngoài ra còn các Case study đã làm và hỗ trợ như
+								thầy TRẦN VIỆT QUÂN, thầy PHẠM THÀNH LONG, Hoàng
+								Mạnh Cường Topmax, Nguyễn Tất Kiểm, Tuệ An, Chú
+								Tùng Trông Xe và các học viên thành công kiếm
+								tiền từ View.
+							</p>
+							<p style="border-bottom: none;">
+								Đặc điểm nổi bật là tất cả các công ty và Case
+								đã làm hoặc hỗ trợ tới hiện tại vẫn đang trên đà
+								phát triển mạnh.
+							</p>
+						</div><!--box-scroll-->
+					</div><!--cardcontent-->
+				</div><!--card-->
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/2.jpg" />
+					<div class="card-content">
+						<p
+							style="font-size: 20px;color:#040e27; border-bottom: none; line-height: normal; padding:15px 0 5px 0;"
+						>
+							Giám đốc Công ty
+						</p>
+						<h3 class="did">Vũ Việt Hoàng</h3>
+						<h2>CEO</h2>
+						<p>
+							<b> 7 năm kinh nghiệm </b>xây dựng hệ thống content <b
+								>Youtube thị trường Mỹ</b
+							>
+						</p>
+						<p style="border-bottom: none;">
+							Top thịnh hành Trending Game toàn thế giới trong 3
+							tháng liên tiếp
+						</p>
+					</div><!--cardcontent-->
+				</div><!--card-->
+				<div
+					class="card"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/3.jpg" />
+					<div class="card-content">
+						<p
+							style="font-size: 20px;color:#040e27; border-bottom: none; line-height: normal; padding:15px 0 5px 0;"
+						>
+							Giám đốc Vận hành
+						</p>
+						<h3 class="did">Hồ Anh Tuấn</h3>
+						<h2>COO</h2>
+						<p>
+							<b>10 năm kinh nghiệm tại VTC GAME </b>với vị trí
+							Trưởng Phòng Thiết Kế
+						</p>
+						<p style="border-bottom: none;">
+							Xây dựng App Game lên top 1 CH Play
+						</p>
+					</div><!--cardcontent-->
+				</div><!--card-->
+			</div><!--cardcontainer-->
+		</div>
+		<!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD-->
+		<div id="hst">
+			<div class="network">
+				<div class="card-info" data-aos="fade-up">
+					<h2>Hệ Sinh Thái GODA NETWORK</h2>
+					<p>Văn phòng trụ sở làm việc của GODA Network đặt tại:</p>
+					<p
+						style="font-weight: 700; color: #00bdfe; margin: 0 auto;font-size: 18px;"
+					>
+						80 Duy Tân, Cầu Giấy, Hà Nội. <br />
+						Phố Duy Tân được mệnh danh là <strong
+							style="color: #00d8c6">“Thung Lũng Silicon”</strong
+						> của Hà Nội
+					</p>
+				</div>
+				<div class="card-container">
+					<div
+						class="card2"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>GODA Media</h3>
+								<p>Xây kênh Youtube thị trường Mỹ.</p>
+							</div><!--editnet-->
+							<img src="img/media.png" alt="" />
+						</div>
+						<!--card2-content-->
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>GODA Agency</h3>
+								<p>Dịch vụ Xây Kênh & Quản lý kênh Youtube.</p>
+							</div><!--editnet-->
+							<img src="img/media2.png" alt="" />
+						</div>
+						<!--card2-content-->
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>GODA Tech and Invest</h3>
+								<p>
+									Phát triển Tools / App phục vụ hệ sinh thái.
+								</p>
+							</div><!--editnet-->
+							<img src="img/media3.png" alt="" />
+						</div>
+						<!--card2-content-->
+					</div><!--card2-->
+					<div
+						class="card2"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>GODA Entertainment</h3>
+								<p>
+									Sản xuất nội dung Content Sitcom Facebook.
+								</p>
+							</div><!--editnet-->
+							<img src="img/media4.png" alt="" />
+						</div>
+						<!--card2-content-->
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>GODA Edu - Huan.vn</h3>
+								<p>Đào tạo cách xây dựng kênh Youtube.</p>
+							</div><!--editnet-->
+							<img src="img/media5.png" alt="" />
+						</div>
+						<!--card2-content-->
+						<div class="card2-content">
+							<div class="editnet">
+								<h3>MCN quản lý</h3>
+								<p>
+									Hỗ trợ các nhà sáng tạo trong cộng đồng
+									riêng .
+								</p>
+							</div><!--editnet-->
+							<img src="img/media6.png" alt="" />
+						</div>
+						<!--card2-content-->
+					</div><!--card2-->
+				</div><!--container-->
+			</div><!--network-->
+		</div>
+		<!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET-->
+		<div id="vh">
+			<div class="culture">
+				<div class="card-info" data-aos="fade-up">
+					<h2>Văn hóa GODA NETWORK</h2>
+					<p style="margin: 0 auto; color: #00bdfe; font-size: 16px;">
+						Excellence or Nothing - Xuất sắc hoặc Không có gì
+					</p>
+					<p
+						style="margin: 10px auto; font-weight: 700; color: #00bdfe; font-size: 30px; padding-bottom: 40px;"
+					>
+						<strong
+							style="font-size: 60px; font-style: italic; color:#face15 ;"
+							>5</strong
+						> niềm tin của tổ chức
+					</p>
+				</div><!--card-info-->
+				<div class="card-container">
+					<div
+						class="card4"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<img src="img/1.png" />
+						<div class="card-content">
+							<p>
+								<strong
+									>" Trong mọi con đường tới thành công, nhất
+									định có con đường ngắn nhất "</strong
+								>
+							</p>
+							<p>
+								Trong mọi cách làm, luôn luôn tồn tại một cách
+								làm tốt hơn.
+							</p>
+						</div><!--cardcontent-->
+					</div><!--card-->
+
+					<div
+						class="card4"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<img src="img/2.png" />
+						<div class="card-content">
+							<p>
+								<strong>
+									" Khi có đủ niềm tin, sẽ tạo ra động lực
+									thực hiện không <br /> giới hạn "</strong
+								>
+							</p>
+							<p>
+								Khi thiếu niềm tin, sẽ vừa làm vừa nghĩ lý do
+								thất bại.
+							</p>
+						</div><!--cardcontent-->
+					</div><!--card-->
+					<div
+						class="card4"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<img src="img/3.png" />
+						<div class="card-content">
+							<p>
+								<strong> " Internet hoặc Không có gì "</strong>
+							</p>
+							<p>
+								Hãy bắt đầu tạo thêm 1 nguồn thu nhập mới trên
+								internet ngay từ hôm nay.
+							</p>
+						</div><!--cardcontent-->
+					</div><!--card-->
+					<div
+						class="card4"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<img src="img/4.png" />
+						<div class="card-content">
+							<p>
+								<strong>
+									" Tìm đúng người, hỏi đúng chuyện, làm đúng
+									việc "</strong
+								>
+							</p>
+							<p style="font-size: 40px;">"Play to Win"</p>
+						</div><!--cardcontent-->
+					</div><!--card-->
+					<div
+						class="card4"
+						data-aos="fade-up"
+						data-aos-anchor-placement="top-bottom"
+					>
+						<img src="img/5.png" />
+						<div class="card-content">
+							<p>
+								<strong>
+									" Hãy thành công theo cách đơn giản "</strong
+								>
+							</p>
+						</div><!--cardcontent-->
+					</div><!--card-->
+				</div><!--container-->
+			</div><!--culture-->
+		</div>
+		<!-- CUlTURE--><!-- CUlTURE--><!-- CUlTURE--><!-- CUlTURE--><!-- CUlTURE--><!-- CUlTURE-->
+		<div id="dt"></div>
+		<div class="partner">
+			<div class="card-info" data-aos="fade-up">
+				<h2>Đối tác của GODA NETWORK</h2>
+			</div><!--card-info-->
+			<div class="card-container2">
+				<div
+					class="card4"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/a.png" />
+				</div><!--card-->
+				<div
+					class="card4"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/b.png" />
+				</div><!--card-->
+				<div
+					class="card4"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<img src="img/c.png" />
+				</div><!--card-->
+				<div class="card4">
+					<img src="img/d.png" />
+				</div><!--card-->
+			</div><!--container-->
+		</div><!--culture-->
+		<!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET-->
+		<div class="support">
+			<div class="card-container3">
+				<div
+					class="cardblock"
+					data-aos="fade-up"
+					data-aos-anchor-placement="top-bottom"
+				>
+					<h1 style="padding:10px 0">Liên hệ với</h1>
+					<h3 style="font-size: 40px; ; color: #00bdfe;">
+						GODA NETWORK
+					</h3>
+					<div class="form-block">
+						<form>
+							<div class="form-flex">
+								<div class="form-group">
+									<input
+										type="text"
+										name="name"
+										class="form-control"
+										placeholder="Tên của bạn"
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<input
+										type="email"
+										name="email"
+										class="form-control"
+										placeholder="Email"
+										required
+									/>
+								</div>
+								<div class="form-group">
+									<textarea
+										class="form-control2"
+										name="message"
+										placeholder="Lời nhắn"></textarea>
+								</div>
+								<button>Gửi</button>
+							</div>
+						</form>
+					</div>
+				</div><!--card2-->
+			</div><!--container-->
+		</div><!--network-->
 	</body>
+	<!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET--><!-- NET-->
+	<div id="lh">
+		<Footer />
+		<!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP--><!-- SCRIP-->
+	</div>
 </html>

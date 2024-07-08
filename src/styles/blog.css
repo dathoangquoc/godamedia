@@ -1,5 +1,5 @@
 .content h2 {
-    @apply text-xl text-theme-color font-semibold pt-8
+    @apply text-xl font-semibold pt-8
 }
 
 .content p {
