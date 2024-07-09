@@ -1,5 +1,5 @@
 .content h2 {
-    @apply text-xl font-semibold pt-8
+    @apply text-2xl font-semibold pt-8
 }
 
 .content p {
@@ -11,7 +11,7 @@
 }
 
 .content a {
-    @apply text-red-400 hover:underline
+    @apply text-blue-400 hover:underline
 }
 
 .content img {

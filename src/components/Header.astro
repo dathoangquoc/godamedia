@@ -1,16 +1,21 @@
+---
+import headerImg from "../../public/img/logo.png";
+import { Image } from "astro:assets";
+---
+
 <header>
 	<nav class="navbar">
-		<img src="img/logo.png" alt="" />
+		<Image src={headerImg} alt="Goda Media Logo" />
 		<ul class="menu-links">
 			<span id="close-menu-btn" class="material-symbols-outlined"
 				><i class="fa-solid fa-xmark"></i></span
 			>
-			<li><a href="#vct">Về chúng tôi</a></li>
-			<li><a href="#hst">Hệ sinh thái</a></li>
-			<li><a href="#vh">Văn hóa</a></li>
-			<li><a href="#dt">Đối tác</a></li>
-			<li><a href="#lh">Liên hệ</a></li>
-			<li><a href="tuyendung.html">Tuyển dụng</a></li>
+			<li><a href="/#vct">Về chúng tôi</a></li>
+			<li><a href="/#hst">Hệ sinh thái</a></li>
+			<li><a href="/#vh">Văn hóa</a></li>
+			<li><a href="/#dt">Đối tác</a></li>
+			<li><a href="/#lh">Liên hệ</a></li>
+			<li><a href="/tuyen-dung">Tuyển dụng</a></li>
 		</ul>
 		<span id="hamburger-btn" class="material-symbols-outlined"
 			><i class="fa-solid fa-bars"></i></span
