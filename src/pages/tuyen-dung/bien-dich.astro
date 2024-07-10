@@ -2,186 +2,114 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-import Apply from "../../components/tuyen-dung/Apply.astro";
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead />
     </head>
     <body>
         <Header />
 
-        <section class="about_area pt-17 relative">
-            <div class="container">
-                <div class="row justify-end">
-                    <div class="w-full">
-                        <div class="about_content mx-4 pt-11 lg:pt-15 lg:pb-8">
-                            <div class="section_title">
-                                <h1 class="main_title text-theme-color">
-                                    Chuyên viên Biên dịch Kịch bản Video
-                                    (Việt-Anh)
-                                </h1>
-                                <h2 class="text-lg">
-                                    <span class="font-bold"
-                                        >Thời gian làm việc:</span
-                                    >
-                                    8h30 - 18h00 (nghỉ trưa 1h30'), Thứ 2 - Thứ 6
-                                    + hai ngày thứ 7 trong tháng.
-                                </h2>
-                                <h2 class="text-lg">
-                                    <span class="font-bold"
-                                        >Địa điểm làm việc:</span
-                                    >
-                                    80 Duy Tân, Cầu Giấy, Hà Nội.
-                                </h2>
-                            </div>
-                            <!-- section title -->
-                        </div>
-                        <div class="px-4 lg:px-25 py-8">
-                            <!-- Mo ta cong viec -->
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    MÔ TẢ CÔNG VIỆC
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Mục đích của công việc:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Biên dịch các nội dung kịch bản cho
-                                        video từ tiếng Việt sang tiếng Anh.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Nhiệm vụ và trách nhiệm chính:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Biên dịch các nội dung kịch bản từ tiếng
-                                        Việt sang tiếng Anh, đảm bảo văn phong
-                                        phù hợp với người bản ngữ.
-                                    </li>
-                                    <li>
-                                        Kiểm soát chất lượng bài dịch trước khi
-                                        chuyển bộ phận thiết kế.
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Yeu cau -->
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    YÊU CẦU
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Kinh nghiệm:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Từ 01 năm kinh tnghiệm tại vị trí tương
-                                        đương
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Kiến thức chuyên môn:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Tốt nghiệp chuyên ngành Biên phiên dịch
-                                        các trường HANU, ULIS.
-                                    </li>
-                                    <li>IELTS từ 7.5 trở lên.</li>
-                                    <li>
-                                        Ưu tiên ứng viên có kinh nghiệm dịch
-                                        video.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    3. Kỹ năng:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Cẩn thận, tỉ mỉ, sắp xếp công việc hợp
-                                        lý, khoa học.
-                                    </li>
-                                    <li>
-                                        Có khả năng làm việc nhóm, làm việc độc
-                                        lập.
-                                    </li>
-                                    <li>
-                                        Thành thạo các ứng dụng tin học văn
-                                        phòng.
-                                    </li>
-                                    <li>Trách nhiệm cao trong công việc.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Quyen loi -->
-                            <div class="pb-4">
-                                <h3 class="text-xl text-theme-color">
-                                    QUYỀN LỢI
-                                </h3>
-                                <h4 class="font-semibold text-lg">
-                                    1. Thu nhập:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>Lương cứng 13.000.000 - 15.000.000đ</li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    2. Phụ cấp:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>Phụ cấp ăn trưa 30.000đ/ngày.</li>
-                                    <li>
-                                        Thưởng chung toàn công ty các dịp lễ,
-                                        tết, sinh nhật công ty, sinh nhật nhân
-                                        sự.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    3. Phúc lợi:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Du lịch, Team Building, Year End Party
-                                        hàng năm.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    4. Đào tạo:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Tham gia các khóa đào tạo chuyên sâu về
-                                        Youtube.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-lg">
-                                    5. Quyền lợi khác:
-                                </h4>
-                                <ul class="list-disc pl-5 text-black pb-3">
-                                    <li>
-                                        Được cấp máy tính 2 màn hình thỏa sức
-                                        sáng tạo.
-                                    </li>
-                                    <li>
-                                        Văn hóa làm việc không OT tại công ty.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- content -->
-                    </div>
-                </div>
-                <!-- row -->
+        <div class="hero-section2">
+            <div class="content" data-aos="fade-up">
+                <h2 style=" color: #fff; ">Cơ hội làm việc tại</h2>
+                <h2 style=" color: #fff; font-size: 75px; ">GODA NETWORK</h2>
             </div>
-        </section>
+        </div>
+        <!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER--><!-- HEADER-->
 
-        <Apply />
+        <div class="editphim">
+            <h1>Chuyên viên Biên dịch Kịch bản Video (Việt -Anh)</h1>
+            <h3>
+                Thời gian làm việc: <strong
+                    >8h30 - 18h00 (nghỉ trưa 1h30'), Thứ 2 - Thứ 6 + hai ngày
+                    thứ 7 trong tháng.</strong
+                >
+                <br />
+                Địa điểm làm việc: <strong>
+                    80 Duy Tân, Cầu Giấy, Hà Nội.</strong
+                >
+            </h3>
 
-        <Footer />
+            <span>MÔ TẢ CÔNG VIỆC</span>
+            <p>
+                <b>1. Mục đích của công việc: </b><br />
+                - Biên dịch các nội dung kịch bản cho video từ tiếng Việt sang tiếng
+                Anh;<br />
+                <b>2. Nhiệm vụ và trách nhiệm chính:</b><br />
+                - Biên dịch các nội dung kịch bản từ tiếng Việt sang tiếng Anh, đảm
+                bảo văn phong phù hợp với người bản ngữ;<br />
+                - Kiểm soát chất lượng bài dịch trước khi chuyển bộ phận thiết kế;
+            </p>
+
+            <span>YÊU CẦU</span>
+            <p>
+                <b>1. Kinh nghiệm:</b>
+                <br />
+                - Từ 01 năm kinh tnghiệm tại vị trí tương đương;<br />
+                <b>2. Kiến thức chuyên môn:</b><br />
+                - Tốt nghiệp chuyên ngành Biên phiên dịch các trường HANU, ULIS;<br
+                />
+                - IELTS từ 7.5 trở lên;<br />
+                - Ưu tiên ứng viên có kinh nghiệm dịch video;<br />
+                <b> 3. Kỹ năng:</b><br />
+                - Cẩn thận, tỉ mỉ, sắp xếp công việc hợp lý, khoa học; - Có khả năng
+                làm việc nhóm, độc lập; - Thành thạo các ứng dụng tin học văn phòng;
+                - Trách nhiệm cao trong công việc;
+
+                <span>QUYỀN LỢI</span>
+                <p>
+                    <b>1. Thu nhập: </b><br />
+                    - Lương cứng <b>13.000.000 - 15.000.000đ</b><br />
+                    <b>2. Phụ cấp:</b><br />
+                    - Phụ cấp ăn trưa 30.000đ/ngày - Thưởng chung toàn công ty các
+                    dịp lễ, tết, sinh nhật công ty, sinh nhật nhân sự;<br />
+                    <b>3. Phúc lợi:</b><br />
+                    - Du lịch, Team Building, Year End Party hàng năm;<br />
+                    <b>4. Đào tạo:</b><br />
+                    - Tham gia các khóa đào tạo chuyên sâu về Youtube;<br />
+                    <b>5. Quyền lợi khác:</b><br />
+                    - Được cấp máy tính 2 màn hình thỏa sức sáng tạo;<br />
+                    - Văn hóa làm việc không OT tại công ty;
+                </p>
+            </p>
+            <!--  editphim-->
+
+            <!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD--><!-- BLD-->
+
+            <div id="hs">
+                <div class="container6">
+                    <div class="hoso">
+                        <div class="computer" data-aos="fade-up">
+                            <img src="/img/computer.png" alt="" />
+                        </div><!-- computer -->
+                        <div class="contenthoso">
+                            <h1>Liên hệ nộp hồ sơ</h1>
+                            <p>
+                                Ứng viên quan tâm vui lòng gửi CV về email: <b
+                                    >tuyendung@godamedia.vn</b
+                                ><br />
+                                Tiêu đề mail viết theo cấu trúc:<br />
+                                <b
+                                    >Vị trí ứng tuyển_Họ và tên ứng viên (VD:
+                                    Chuyên viên Edit Motion_ Nguyễn Văn A)</b
+                                ><br />
+                                Liên hệ: <b style="color: crimson;"
+                                    >Bộ phận Tuyển dụng - 0888.527.686</b
+                                ><br />
+                                Văn phòng: <b>
+                                    Số 18, ngõ 250 Nguyễn Xiển, Thanh Xuân, Hà
+                                    Nội.</b
+                                >
+                            </p>
+                        </div><!-- contenthoso -->
+                    </div><!-- hoso -->
+                </div><!-- container -->
+            </div>
+
+            <Footer />
+        </div>
     </body>
 </html>
