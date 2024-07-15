@@ -3,6 +3,7 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { Image } from "astro:assets";
 ---
 
 <!doctype html>
@@ -28,7 +29,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                     <h1>GODA NETWORK</h1>
                 </div>
                 <div class="item-job">
-                    <img src="img/td1.png" alt="" />
+                    <Image
+                        src={import("../../../public/img/td1.png")}
+                        alt="Video Editor"
+                    />
                     <div class="nd-tuyendung">
                         <h3>Thu nhập hấp dẫn</h3>
                         <p>
@@ -42,7 +46,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                 <!-- item-job -->
 
                 <div class="item-job">
-                    <img src="img/td4.png" alt="" />
+                    <Image
+                        src={import("../../../public/img/td4.png")}
+                        alt="Video Editor"
+                    />
                     <div class="nd-tuyendung">
                         <h3>Đào tạo phát triển</h3>
                         <p>
@@ -54,7 +61,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                 </div>
                 <!-- item-job -->
                 <div class="item-job">
-                    <img src="img/td2.png" alt="" />
+                    <Image
+                        src={import("../../../public/img/td2.png")}
+                        alt="Video Editor"
+                    />
                     <div class="nd-tuyendung">
                         <h3>Môi trường làm việc</h3>
                         <p>
@@ -66,7 +76,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                 <!-- item-job -->
 
                 <div class="item-job">
-                    <img src="img/td5.png" alt="" />
+                    <Image
+                        src={import("../../../public/img/td5.png")}
+                        alt="Video Editor"
+                    />
                     <div class="nd-tuyendung">
                         <h3>Hoạt động khác</h3>
                         <p>
@@ -77,7 +90,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                 </div>
                 <!-- item-job -->
                 <div class="item-job">
-                    <img src="img/td3.png" alt="" />
+                    <Image
+                        src={import("../../../public/img/td3.png")}
+                        alt="Video Editor"
+                    />
                     <div class="nd-tuyendung">
                         <h3>Các chế độ theo luật định</h3>
                         <p>
@@ -104,9 +120,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                         data-aos-anchor-placement="top-bottom"
                     >
                         <div class="img-hover-zoom">
-                            <a href="tuyen-dung/editor-phim"
-                                ><img src="img/4.jpg" /></a
-                            >
+                            <a href="/tuyen-dung/editor-phim">
+                                <Image
+                                    src={import("../../../public/img/4.jpg")}
+                                    alt="Video Editor"
+                                />
+                            </a>
                         </div>
                         <div class="card-content5">
                             <h4 class="did">Video Editor Dựng phim</h4>
@@ -123,7 +142,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                 </li>
                             </ul>
 
-                            <a href="tuyen-dung/editor-phim">Xem chi tiết</a>
+                            <a href="/tuyen-dung/editor-phim">Xem chi tiết</a>
                         </div><!--cardcontent-->
                     </div><!--card-->
 
@@ -133,8 +152,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                         data-aos-anchor-placement="top-bottom"
                     >
                         <div class="img-hover-zoom">
-                            <a href="tuyen-dung/editor-motion"
-                                ><img src="img/5.jpg" /></a
+                            <a href="/tuyen-dung/editor-motion"
+                                ><Image
+                                    src={import("../../../public/img/5.jpg")}
+                                    alt="Video Editor"
+                                /></a
                             >
                         </div>
                         <div class="card-content5">
@@ -152,7 +174,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                 </li>
                             </ul>
 
-                            <a href="tuyen-dung/editor-motion">Xem chi tiết</a>
+                            <a href="/tuyen-dung/editor-motion">Xem chi tiết</a>
                         </div><!--cardcontent-->
                     </div><!--card-->
 
@@ -162,8 +184,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                         data-aos-anchor-placement="top-bottom"
                     >
                         <div class="img-hover-zoom">
-                            <a href="tuyen-dung/graphic"
-                                ><img src="img/9.jpg" /></a
+                            <a href="/tuyen-dung/graphic"
+                                ><Image
+                                    src={import("../../../public/img/9.jpg")}
+                                    alt="Video Editor"
+                                /></a
                             >
                         </div>
                         <div class="card-content5">
@@ -181,7 +206,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                 </li>
                             </ul>
 
-                            <a href="tuyen-dung/graphic">Xem chi tiết</a>
+                            <a href="/tuyen-dung/graphic">Xem chi tiết</a>
                         </div><!--cardcontent-->
                     </div><!--card-->
 
@@ -192,8 +217,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                     >
                         <a href="">
                             <div class="img-hover-zoom">
-                                <a href="tuyen-dung/thumbnail"
-                                    ><img src="img/6.jpg" /></a
+                                <a href="/tuyen-dung/thumbnail"
+                                    ><Image
+                                        src={import(
+                                            "../../../public/img/6.jpg"
+                                        )}
+                                        alt="Video Editor"
+                                    /></a
                                 >
                             </div>
                             <div class="card-content5">
@@ -211,7 +241,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                     </li>
                                 </ul>
 
-                                <a href="tuyen-dung/thumbnail">Xem chi tiết</a>
+                                <a href="/tuyen-dung/thumbnail">Xem chi tiết</a>
                             </div><!--cardcontent-->
                         </a><!--card-->
                     </div>
@@ -221,8 +251,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                         data-aos-anchor-placement="top-bottom"
                     >
                         <div class="img-hover-zoom">
-                            <a href="tuyen-dung/bien-dich"
-                                ><img src="img/8.jpg" /></a
+                            <a href="/tuyen-dung/bien-dich"
+                                ><Image
+                                    src={import("../../../public/img/8.jpg")}
+                                    alt="Video Editor"
+                                /></a
                             >
                         </div>
                         <div class="card-content5">
@@ -240,7 +273,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                 </li>
                             </ul>
 
-                            <a href="tuyen-dung/bien-dich">Xem chi tiết</a>
+                            <a href="/tuyen-dung/bien-dich">Xem chi tiết</a>
                         </div><!--cardcontent-->
                     </div><!--card-->
 
@@ -250,8 +283,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                         data-aos-anchor-placement="top-bottom"
                     >
                         <div class="img-hover-zoom">
-                            <a href="tuyen-dung/content"
-                                ><img src="img/7.jpg" /></a
+                            <a href="/tuyen-dung/content"
+                                ><Image
+                                    src={import("../../../public/img/7.jpg")}
+                                    alt="Video Editor"
+                                /></a
                             >
                         </div>
                         <div class="card-content5">
@@ -269,7 +305,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
                                 </li>
                             </ul>
 
-                            <a href="tuyen-dung/content">Xem chi tiết</a>
+                            <a href="/tuyen-dung/content">Xem chi tiết</a>
                         </div><!--cardcontent-->
                     </div><!--card-->
                 </div><!--cardcontainer-->
@@ -280,7 +316,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
             <div class="container6">
                 <div class="hoso">
                     <div class="computer" data-aos="fade-up">
-                        <img src="/img/computer.png" alt="" />
+                        <Image
+                            src={import("../../../public/img/computer.png")}
+                            alt="Contact Graphic"
+                        />
                     </div><!-- computer -->
                     <div class="contenthoso">
                         <h1>Liên hệ nộp hồ sơ</h1>
