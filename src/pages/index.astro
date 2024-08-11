@@ -58,14 +58,22 @@ import Footer from "../components/Footer.astro";
 	</head>
 	<body>
 		<Header />
-		<div class="hero-section bg-blue-400 bg-[url('/img/br.jpg')]">
-			<div class="content text-white" data-aos="fade-up">
-				<h2>Chào mừng đến với</h2>
-				<h2 class="font-bold">GODA NETWORK</h2>
-				<p class="text-white">
-					<strong class="font-semibold text-xl">
-						Nơi đưa sáng tạo của người Việt ra toàn Thế giới!
-					</strong><br />
+		<div
+			class="bg-blend-normal bg-[url('/img/br.jpg')] h-screen relative text-center"
+		>
+			<div class="w-full h-full bg-blue-900 absolute opacity-20">
+				<!-- Color Overlay -->
+			</div>
+			<div
+				class="flex flex-col justify-center align-middle absolute w-full top-1/4 lg:top-1/3 gap-4 px-10"
+			>
+				<h1 class="text-white font-bold text-4xl lg:text-6xl pb-4">
+					Chào mừng đến với <br /> GODA NETWORK
+				</h1>
+				<h2 class="text-white font-semibold text-2xl lg:text-3xl">
+					Nơi đưa sáng tạo của người Việt ra toàn Thế giới!
+				</h2>
+				<p class="text-white text-lg lg:text-xl">
 					8 năm Kinh nghiệm sản xuất nội dung Content trên Youtube với
 					tổng cộng 15 triệu lượt đăng ký trên Youtube
 				</p>
