@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../public/fonts/RobotoFlex-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
+  font-family: "Roboto";
 }
 
 html {
