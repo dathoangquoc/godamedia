@@ -37,7 +37,6 @@ import Footer from "../components/Footer.astro";
 					.getElementById("contact-form")
 					.addEventListener("submit", function (event) {
 						event.preventDefault();
-						// these IDs from the previous steps
 						emailjs
 							.sendForm(
 								"service_i9n2gpb",
@@ -61,14 +60,15 @@ import Footer from "../components/Footer.astro";
 		<div
 			class="bg-blend-normal bg-[url('/img/br.jpg')] h-screen relative text-center"
 		>
-			<div class="w-full h-full bg-blue-900 absolute opacity-20">
+			<div class="w-full h-full bg-blue-900 absolute opacity-40">
 				<!-- Color Overlay -->
 			</div>
 			<div
 				class="flex flex-col justify-center align-middle absolute w-full top-1/4 lg:top-1/3 gap-4 px-10"
 			>
-				<h1 class="text-white font-bold text-4xl lg:text-6xl pb-4">
-					Chào mừng đến với <br /> GODA NETWORK
+				<h1 class="text-white font-bold text-5xl pb-4">
+					Chào mừng đến với
+					<div class="text-6xl font-bold">GODA NETWORK</div>
 				</h1>
 				<h2 class="text-white font-semibold text-2xl lg:text-3xl">
 					Nơi đưa sáng tạo của người Việt ra toàn Thế giới!
@@ -106,8 +106,8 @@ import Footer from "../components/Footer.astro";
 						>
 							Chủ tịch Hội đồng Quản trị
 						</p>
-						<h3 class="did">Nguyễn Văn Huân</h3>
-						<h2>COB</h2>
+						<h3 class="font-bold">Nguyễn Văn Huân</h3>
+						<h2 class="font-bold">COB</h2>
 						<div class="box-scroll">
 							<p>
 								<b>8 Năm kinh nghiệm thực chiến </b>làm content
@@ -157,8 +157,8 @@ import Footer from "../components/Footer.astro";
 						>
 							Giám đốc Công ty
 						</p>
-						<h3 class="did">Vũ Việt Hoàng</h3>
-						<h2>CEO</h2>
+						<h3 class="font-bold">Vũ Việt Hoàng</h3>
+						<h2 class="font-bold">CEO</h2>
 						<p>
 							<b> 7 năm kinh nghiệm </b>xây dựng hệ thống content <b
 								>Youtube thị trường Mỹ</b
@@ -182,8 +182,8 @@ import Footer from "../components/Footer.astro";
 						>
 							Giám đốc Vận hành
 						</p>
-						<h3 class="did">Hồ Anh Tuấn</h3>
-						<h2>COO</h2>
+						<h3 class="font-bold">Hồ Anh Tuấn</h3>
+						<h2 class="font-bold">COO</h2>
 						<p>
 							<b>10 năm kinh nghiệm tại VTC GAME </b>với vị trí
 							Trưởng Phòng Thiết Kế
@@ -428,7 +428,7 @@ import Footer from "../components/Footer.astro";
 					data-aos="fade-up"
 					data-aos-anchor-placement="top-bottom"
 				>
-					<h1 class="text-3xl">Liên hệ với</h1>
+					<h1 class="text-3xl font-bold">Liên hệ với</h1>
 					<h3 style="font-size: 40px; ; color: #00bdfe;">
 						GODA NETWORK
 					</h3>
